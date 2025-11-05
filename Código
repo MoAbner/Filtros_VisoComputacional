@@ -1,0 +1,35 @@
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+from google.colab import files
+
+uploaded = files.upload()
+
+if uploaded:  # Check if any files were uploaded
+    for nome_arquivo in uploaded.keys():
+        imagem = cv2.imread(nome_arquivo, cv2.IMREAD_GRAYSCALE)
+
+    sobel_x = cv2.Sobel(imagem, cv2.CV_64F, 1, 0, ksize=3)
+    sobel_y = cv2.Sobel(imagem, cv2.CV_64F, 0, 1, ksize=3)
+    sobel_mag = np.sqrt(sobel_x**2 + sobel_y**2)
+    sobel_mag = np.uint8(sobel_mag)
+
+    laplaciano = cv2.Laplacian(imagem, cv2.CV_64F, ksize=3)
+    laplaciano = np.uint8(np.absolute(laplaciano))
+
+    canny = cv2.Canny(imagem, 100, 200)
+
+    titulos = ['Original', 'Sobel (Magnitude)', 'Laplaciano', 'Canny']
+    imagens = [imagem, sobel_mag, laplaciano, canny]
+
+    plt.figure(figsize=(12,6))
+    for i in range(4):
+        plt.subplot(2,2,i+1)
+        plt.imshow(imagens[i], cmap='gray')
+        plt.title(titulos[i])
+        plt.axis('off')
+
+    plt.tight_layout()
+    plt.show()
+else:
+    print("No files were uploaded.")
