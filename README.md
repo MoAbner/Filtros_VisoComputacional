@@ -90,5 +90,5 @@ Como as imagens são formadas por pixels, utilizamos aproximações de derivadas
 
 Este projeto apresenta os principais operadores clássicos para detecção de bordas e estabelece fundamentos importantes para estudos avançados em visão computacional, incluindo redes neurais convolucionais, segmentação de imagens e rastreamento em vídeo.
 
-Esse projeto foi criado baseado nas informações que obtive no grupo de estudo sobre visão computacional.
-link que leva direto para o grupo no whattsapp: https://chat.whatsapp.com/G5lLNJdp9oxDb0fZVIT4ca?mode=ems_copy_c.
+Esse projeto foi criado baseado nas informações que obtive no grupo de estudo sobre visão computacional.\
+Link que leva direto para o grupo no whattsapp: https://chat.whatsapp.com/G5lLNJdp9oxDb0fZVIT4ca?mode=ems_copy_c.
