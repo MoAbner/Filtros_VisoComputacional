@@ -4,39 +4,39 @@ Este projeto tem como objetivo demonstrar e analisar técnicas fundamentais de p
 
 ## Motivação
 
-A identificação de bordas é amplamente utilizada em áreas como:
+* A identificação de bordas é amplamente utilizada em áreas como:
 
-Sistemas de visão embarcados
+* Sistemas de visão embarcados
 
-Veículos autônomos e sistemas de direção assistida
+* Veículos autônomos e sistemas de direção assistida
 
-Reconhecimento facial e autenticação biométrica
+* Reconhecimento facial e autenticação biométrica
 
-Processamento de imagens médicas (tomografia, ressonância, ultrassom)
+* Processamento de imagens médicas (tomografia, ressonância, ultrassom)
 
-Rastreamento e segmentação de objetos em vídeo
+* Rastreamento e segmentação de objetos em vídeo
 
-OCR (Reconhecimento Óptico de Caracteres)
+* OCR (Reconhecimento Óptico de Caracteres)
 
-Sistemas de inspeção industrial e metrologia
+* Sistemas de inspeção industrial e metrologia
 
-Este projeto reforça os conceitos essenciais para aplicações em aprendizado de máquina, visão computacional e inteligência artificial aplicada.
+> Este projeto reforça os conceitos essenciais para aplicações em aprendizado de máquina, visão computacional e inteligência artificial aplicada.
 
 ## Objetivos
 
 Este trabalho busca:
 
-Aplicar e comparar diferentes filtros de detecção de bordas
+* Aplicar e comparar diferentes filtros de detecção de bordas
 
-Analisar o comportamento de cada operador diante de diferentes características de imagem
+* Analisar o comportamento de cada operador diante de diferentes características de imagem
 
-Identificar vantagens e limitações de cada abordagem
+* Identificar vantagens e limitações de cada abordagem
 
-Demonstrar, na prática, a diferença entre derivada contínua e derivada discreta
+* Demonstrar, na prática, a diferença entre derivada contínua e derivada discreta
 
-Explorar o uso de kernels convolucionais
+* Explorar o uso de kernels convolucionais
 
-Estabelecer uma base técnica para estágios posteriores de pré-processamento de imagens para IA
+* Estabelecer uma base técnica para estágios posteriores de pré-processamento de imagens para IA
 
 ## Filtros Utilizados
 ### 1. Filtro de Sobel
@@ -45,11 +45,11 @@ O operador de Sobel utiliza derivadas discretas para calcular o gradiente de int
 
 Principais características:
 
-Considera gradientes nas direções x e y
+* Considera gradientes nas direções x e y
 
-Realiza leve suavização contra ruído
+* Realiza leve suavização contra ruído
 
-Bom para encontrar contornos estruturais predominantes
+* Bom para encontrar contornos estruturais predominantes
 
 ### 2. Filtro Laplaciano
 
@@ -57,11 +57,11 @@ O operador Laplaciano aplica a segunda derivada da imagem, realçando variaçõe
 
 Principais características:
 
-Detecta bordas sem necessidade de orientação (omnidirecional)
+* Detecta bordas sem necessidade de orientação (omnidirecional)
 
-Capta detalhes finos
+* Capta detalhes finos
 
-Mais sensível ao ruído, podendo ser usado após suavização
+* Mais sensível ao ruído, podendo ser usado após suavização
 
 ### 3. Filtro Canny
 
@@ -69,15 +69,15 @@ O detector de Canny é um método multietapas considerado referência na literat
 
 Principais características:
 
-Suavização inicial utilizando filtro Gaussiano
+* Suavização inicial utilizando filtro Gaussiano
 
-Cálculo de gradiente (similar ao Sobel)
+* Cálculo de gradiente (similar ao Sobel)
 
-Supressão de não máximos
+* Supressão de não máximos
 
-Histerese por limiar para definição final das bordas
+* Histerese por limiar para definição final das bordas
 
-Fornece bordas contínuas, limpas e com alta precisão
+* Fornece bordas contínuas, limpas e com alta precisão
 
 Derivada Contínua x Derivada Discreta
 Conceito	Descrição
