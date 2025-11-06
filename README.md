@@ -92,3 +92,9 @@ Este projeto apresenta os principais operadores clássicos para detecção de bo
 
 Esse projeto foi criado baseado nas informações que obtive no grupo de estudo sobre visão computacional.\
 Link que leva direto para o grupo no whattsapp: https://chat.whatsapp.com/G5lLNJdp9oxDb0fZVIT4ca?mode=ems_copy_c.
+
+# Tutorial
+
+
+https://github.com/user-attachments/assets/c86e42a3-c4b4-422e-96c7-913d9735e0ca
+
