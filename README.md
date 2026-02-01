@@ -61,26 +61,6 @@ Git e GitHub – versionamento e hospedagem do código
 
 Render – deploy da aplicação web
 
-
-## Fluxo de Processamento da Imagem
-
-Upload da imagem pelo usuário
-
-Conversão para escala de cinza
-
-Aplicação dos filtros:
-
-Sobel (gradiente)
-
-Laplaciano (segunda derivada)
-
-Canny (detecção multietapas)
-
-Conversão das imagens processadas para visualização web
-
-Exibição simultânea dos resultados no navegador
-
-
 ## Filtros Utilizados
 ### 1. Filtro de Sobel
 
@@ -129,22 +109,23 @@ Derivada Discreta	Aproxima a derivada utilizando valores amostrais (pixels), apl
 
 Como as imagens são formadas por pixels, utilizamos aproximações de derivadas através de kernels convolucionais, responsáveis por detectar mudanças abruptas de intensidade entre regiões, caracterizando uma borda.
 
+## Fluxo de Processamento da Imagem
 
-## Arquitetura da Aplicação
+Upload da imagem pelo usuário
 
-A aplicação segue uma arquitetura simples do tipo cliente–servidor:
+Conversão para escala de cinza
 
-O frontend (HTML + CSS) permite o upload da imagem pelo navegador
+Aplicação dos filtros:
 
-O backend (Flask) recebe a imagem via requisição HTTP
+Sobel (gradiente)
 
-A imagem é processada em memória utilizando OpenCV, sem armazenamento em disco
+Laplaciano (segunda derivada)
 
-Os resultados dos filtros são convertidos para bytes e retornados para visualização imediata no navegador
+Canny (detecção multietapas)
 
-Esse modelo evita o salvamento de arquivos no servidor, tornando a aplicação mais leve, segura e eficiente.
+Conversão das imagens processadas para visualização web
 
-
+Exibição simultânea dos resultados no navegador
 
 ## Restrições do Sistema
 
