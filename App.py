@@ -29,8 +29,9 @@ def index():
             erro = "Nenhum arquivo foi selecionado."
 
         elif not extensao_permitida(arquivo.filename):
-            erro = "Arquivo recusado. Envie apenas imagens PNG ou JPG."
+            erro = "Arquivo recusado. Envie apenas imagens PNG, JPEG ou JPG."
 
+        
         else:
             dados = arquivo.read()
             imagem_buffer = np.frombuffer(dados, np.uint8)
