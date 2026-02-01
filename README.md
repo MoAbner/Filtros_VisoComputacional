@@ -159,15 +159,55 @@ Nenhuma imagem é salva no servidor durante o processamento
 
 Segue o link para a visualização do projeto: https://filtros-visaocomputacional.onrender.com
 
+## Pre-requisitos
+
+- Python 3 instalado (recomendado 3.10+).
+- Pip disponivel no terminal.
+- Windows com PowerShell (ou adapte os comandos para seu sistema).
+
+## Como Rodar o Projeto
+
+Para facilitar o uso local, siga o passo a passo abaixo na raiz do projeto.
+
+1. Criar e ativar o ambiente virtual
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+2. Instalar dependencias
+
+```powershell
+pip install -r requirements.txt
+```
+
+3. Rodar a aplicacao
+
+```powershell
+python App.py
+```
+
+4. Acessar no navegador
+
+Abra `http://localhost:10000`.
+
+Se quiser mudar a porta, defina a variavel de ambiente `PORT` antes de rodar:
+
+```powershell
+$env:PORT=5000
+python App.py
+```
+
+## Comandos Uteis
+
+- `python App.py`: inicia o servidor Flask.
+- `pip install -r requirements.txt`: instala as dependencias do projeto.
+- `.venv\Scripts\Activate.ps1`: ativa o ambiente virtual no PowerShell.
+
 ## Considerações Finais
 
 Este projeto apresenta os principais operadores clássicos para detecção de bordas e estabelece fundamentos importantes para estudos avançados em visão computacional, incluindo redes neurais convolucionais, segmentação de imagens e rastreamento em vídeo.
 
 Esse projeto foi criado baseado nas informações que obtive no grupo de estudo sobre visão computacional.\
 Link que leva direto para o grupo no whattsapp: https://chat.whatsapp.com/G5lLNJdp9oxDb0fZVIT4ca?mode=ems_copy_c.
-
-# Tutorial
-
-
-https://github.com/user-attachments/assets/c86e42a3-c4b4-422e-96c7-913d9735e0ca
-
