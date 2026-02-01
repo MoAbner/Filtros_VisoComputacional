@@ -38,6 +38,53 @@ Este trabalho busca:
 
 * Estabelecer uma base técnica para estágios posteriores de pré-processamento de imagens para IA
 
+
+## Tecnologias e Ferramentas Utilizadas
+
+(adicione após “Objetivos” ou antes de “Filtros Utilizados”)
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+Python 3 – linguagem principal do projeto
+
+OpenCV (cv2) – processamento de imagens e aplicação dos filtros
+
+NumPy – manipulação de matrizes e operações numéricas
+
+Flask – framework web para criação da aplicação e rotas HTTP
+
+HTML5 – estrutura da interface web
+
+CSS3 – estilização da interface, com foco em simplicidade e usabilidade
+
+Jinja2 – engine de templates utilizada pelo Flask
+
+Git e GitHub – versionamento e hospedagem do código
+
+Render – deploy da aplicação web
+
+
+## Fluxo de Processamento da Imagem
+
+(opcional, mas deixa o projeto ainda mais profissional)
+
+Upload da imagem pelo usuário
+
+Conversão para escala de cinza
+
+Aplicação dos filtros:
+
+Sobel (gradiente)
+
+Laplaciano (segunda derivada)
+
+Canny (detecção multietapas)
+
+Conversão das imagens processadas para visualização web
+
+Exibição simultânea dos resultados no navegador
+
+
 ## Filtros Utilizados
 ### 1. Filtro de Sobel
 
@@ -85,6 +132,38 @@ Derivada Contínua	Definida matematicamente para funções contínuas, represent
 Derivada Discreta	Aproxima a derivada utilizando valores amostrais (pixels), aplicável a imagens digitais
 
 Como as imagens são formadas por pixels, utilizamos aproximações de derivadas através de kernels convolucionais, responsáveis por detectar mudanças abruptas de intensidade entre regiões, caracterizando uma borda.
+
+
+## Arquitetura da Aplicação
+
+A aplicação segue uma arquitetura simples do tipo cliente–servidor:
+
+O frontend (HTML + CSS) permite o upload da imagem pelo navegador
+
+O backend (Flask) recebe a imagem via requisição HTTP
+
+A imagem é processada em memória utilizando OpenCV, sem armazenamento em disco
+
+Os resultados dos filtros são convertidos para bytes e retornados para visualização imediata no navegador
+
+Esse modelo evita o salvamento de arquivos no servidor, tornando a aplicação mais leve, segura e eficiente.
+
+
+
+## Restrições do Sistema
+
+(isso mostra cuidado técnico)
+
+A aplicação aceita apenas arquivos de imagem (.png, .jpg, .jpeg)
+
+Arquivos inválidos são recusados automaticamente
+
+Nenhuma imagem é salva no servidor durante o processamento
+
+
+## Demonstração
+
+Segue o link para a visualização do projeto: https://filtros-visaocomputacional.onrender.com
 
 ## Considerações Finais
 
