@@ -41,8 +41,6 @@ Este trabalho busca:
 
 ## Tecnologias e Ferramentas Utilizadas
 
-(adicione após “Objetivos” ou antes de “Filtros Utilizados”)
-
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Python 3 – linguagem principal do projeto
@@ -65,8 +63,6 @@ Render – deploy da aplicação web
 
 
 ## Fluxo de Processamento da Imagem
-
-(opcional, mas deixa o projeto ainda mais profissional)
 
 Upload da imagem pelo usuário
 
@@ -151,8 +147,6 @@ Esse modelo evita o salvamento de arquivos no servidor, tornando a aplicação m
 
 
 ## Restrições do Sistema
-
-(isso mostra cuidado técnico)
 
 A aplicação aceita apenas arquivos de imagem (.png, .jpg, .jpeg)
 
