@@ -1,0 +1,31 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# Flask
+instance/
+.webassets-cache
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs / Editores
+.vscode/
+.idea/
+
+# Resultados temporários (se voltar a salvar imagens no futuro)
+results/
+uploads/
